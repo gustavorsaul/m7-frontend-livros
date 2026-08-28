@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "m7-chamados-angular": {
+    "m7-frontend-livros": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:class": {
@@ -83,10 +83,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "m7-chamados-angular:build:production"
+              "buildTarget": "m7-frontend-livros:build:production"
             },
             "development": {
-              "buildTarget": "m7-chamados-angular:build:development"
+              "buildTarget": "m7-frontend-livros:build:development"
             }
           },
           "defaultConfiguration": "development"
