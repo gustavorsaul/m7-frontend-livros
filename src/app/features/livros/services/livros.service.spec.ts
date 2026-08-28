@@ -6,8 +6,8 @@ import { Livro } from '../models/livro';
 import { LivrosService } from './livros.service';
 
 describe('LivrosService', () => {
-  const apiUrl = 'http://localhost:3000/api/livros';
-  const resumoIaUrl = 'http://localhost:3000/api/resumo-ia/livro';
+  const apiUrl = 'https://m7-backend-livros.onrender.com/api/livros';
+  const resumoIaUrl = 'https://m7-backend-livros.onrender.com/api/resumo-ia/livro';
   const livro: Livro = {
     id: 1,
     titulo: 'Dom Casmurro',
