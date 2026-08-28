@@ -2,9 +2,6 @@
 
 ## Aula 8 — Frontend de Livros
 
-## Nome
-
-Gustavo Rech Saul
 
 ## Sobre
 
