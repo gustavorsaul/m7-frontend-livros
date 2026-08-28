@@ -1,0 +1,60 @@
+.resumo-ia {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--cor-borda);
+}
+
+button {
+  min-height: 2.75rem;
+  padding: 0.55rem 1.1rem;
+  background: var(--cor-destaque);
+  border: 1px solid var(--cor-destaque);
+  border-radius: 7px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:hover:not(:disabled) {
+  background: var(--cor-destaque-hover);
+  border-color: var(--cor-destaque-hover);
+  box-shadow: 0 6px 16px rgb(0 0 0 / 24%);
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.68;
+}
+
+.mensagem {
+  color: var(--cor-texto-suave);
+}
+
+.erro {
+  padding: 0.75rem 0.9rem;
+  background: var(--cor-vinho);
+  border-radius: 7px;
+  color: var(--cor-erro);
+}
+
+.resumo {
+  margin-top: 1rem;
+  padding: 20px;
+  background: var(--cor-superficie-secundaria);
+  border: 1px solid var(--cor-borda);
+  border-left: 4px solid var(--cor-destaque);
+  border-radius: 10px;
+}
+
+.resumo h2 {
+  margin: 0 0 0.75rem;
+  color: var(--cor-texto);
+  font-size: 1.15rem;
+}
+
+.resumo p {
+  margin: 0;
+  color: var(--cor-texto-suave);
+  line-height: 1.7;
+  white-space: pre-line;
+}

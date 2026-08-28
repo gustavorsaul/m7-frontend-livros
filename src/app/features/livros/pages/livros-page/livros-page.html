@@ -1,0 +1,13 @@
+<main class="container">
+  <h1 class="titulo-pagina">Biblioteca</h1>
+  <div class="area-criacao">
+    <app-criar-livro (livroCriado)="adicionarLivro($event)" />
+  </div>
+  <app-filtro-livros
+    [pesquisa]="pesquisa()"
+    [status]="filtroStatus()"
+    (pesquisaChange)="atualizarPesquisa($event)"
+    (statusChange)="atualizarStatus($event)"
+  />
+  <app-lista-livros [livros]="livrosFiltrados()" [carregando]="carregando()" [erro]="erro()" />
+</main>

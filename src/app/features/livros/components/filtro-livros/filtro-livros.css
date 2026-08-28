@@ -1,0 +1,44 @@
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: 10px;
+}
+
+.filtros input,
+.filtros select {
+  min-height: 2.75rem;
+  padding: 0.55rem 0.8rem;
+  background: var(--cor-superficie-secundaria);
+  border: 1px solid var(--cor-borda);
+  border-radius: 7px;
+  color: var(--cor-texto);
+}
+
+.filtros input::placeholder {
+  color: var(--cor-texto-suave);
+}
+
+.filtros input {
+  flex: 1 1 16rem;
+}
+
+.filtros select {
+  flex: 0 1 13rem;
+}
+
+.filtros input:hover,
+.filtros select:hover {
+  border-color: var(--cor-destaque);
+}
+
+.filtros input:focus,
+.filtros select:focus {
+  border-color: var(--cor-destaque-hover);
+  box-shadow: 0 0 0 3px rgb(159 105 50 / 24%);
+  outline: none;
+}

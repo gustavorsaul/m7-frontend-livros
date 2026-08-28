@@ -1,0 +1,7 @@
+.erro {
+  padding: 0.85rem 1rem;
+  background: var(--cor-vinho);
+  border: 1px solid #7a3b36;
+  border-radius: 8px;
+  color: var(--cor-erro);
+}

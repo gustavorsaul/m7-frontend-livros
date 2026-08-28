@@ -1,0 +1,42 @@
+<button type="button" (click)="alternar()">
+  {{ aberto() ? 'Cancelar' : 'Adicionar livro' }}
+</button>
+
+@if (aberto()) {
+  <form class="formulario-livro" (ngSubmit)="criar()">
+    <label>
+      Título
+      <input name="titulo" [(ngModel)]="dados.titulo" required />
+    </label>
+
+    <label>
+      Autor
+      <input name="autor" [(ngModel)]="dados.autor" required />
+    </label>
+
+    <label>
+      Categoria
+      <input name="categoria" [(ngModel)]="dados.categoria" required />
+    </label>
+
+    <label>
+      Ano
+      <input type="number" name="ano" [(ngModel)]="dados.ano" min="1" required />
+    </label>
+
+    <label>
+      Status
+      <select name="status" [(ngModel)]="dados.status">
+        <option value="disponivel">Disponível</option>
+        <option value="indisponivel">Indisponível</option>
+      </select>
+    </label>
+
+    <label>
+      Descrição
+      <textarea name="descricao" [(ngModel)]="dados.descricao" required></textarea>
+    </label>
+
+    <button type="submit">Salvar livro</button>
+  </form>
+}

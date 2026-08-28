@@ -1,0 +1,28 @@
+.card h2 {
+  margin: 0 0 0.75rem;
+  color: var(--cor-texto);
+}
+
+.card p {
+  margin: 0.35rem 0;
+  color: var(--cor-texto-suave);
+  line-height: 1.55;
+}
+
+.card p:last-of-type {
+  margin-top: 0.8rem;
+  color: var(--cor-texto);
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--cor-destaque-hover);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: var(--cor-texto);
+  text-decoration: underline;
+}

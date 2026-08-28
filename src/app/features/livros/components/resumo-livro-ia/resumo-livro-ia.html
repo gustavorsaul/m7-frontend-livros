@@ -1,0 +1,16 @@
+<section class="resumo-ia">
+  <button type="button" (click)="gerarResumo()" [disabled]="carregando()">
+    {{ resumo() ? 'Gerar novo resumo' : 'Gerar resumo com IA' }}
+  </button>
+
+  @if (carregando()) {
+    <p class="mensagem" aria-live="polite">Gerando resumo, aguarde...</p>
+  } @else if (erro()) {
+    <p class="erro" role="alert">{{ erro() }}</p>
+  } @else if (resumo()) {
+    <div class="resumo" aria-live="polite">
+      <h2>Resumo gerado por IA</h2>
+      <p>{{ resumo() }}</p>
+    </div>
+  }
+</section>

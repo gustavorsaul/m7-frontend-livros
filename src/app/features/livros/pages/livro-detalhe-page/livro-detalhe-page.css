@@ -1,0 +1,35 @@
+main.container {
+  padding: clamp(20px, 4vw, 34px);
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-top: 4px solid var(--cor-destaque);
+  border-radius: 12px;
+  box-shadow: var(--sombra);
+}
+
+main.container h1 {
+  margin: 1.25rem 0 1rem;
+  color: var(--cor-texto);
+  line-height: 1.2;
+}
+
+main.container p {
+  margin: 0.5rem 0;
+  color: var(--cor-texto-suave);
+  line-height: 1.55;
+}
+
+main.container > p:nth-of-type(1) {
+  color: var(--cor-texto);
+}
+
+main.container a {
+  color: var(--cor-destaque-hover);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+main.container a:hover {
+  color: var(--cor-texto);
+  text-decoration: underline;
+}

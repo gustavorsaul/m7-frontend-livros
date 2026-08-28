@@ -1,0 +1,24 @@
+.titulo-pagina {
+  margin: 0 0 1.5rem;
+  color: var(--cor-texto);
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-shadow: 0 3px 14px rgb(0 0 0 / 35%);
+}
+
+.titulo-pagina::after {
+  display: block;
+  width: 4rem;
+  height: 3px;
+  margin: 0.65rem auto 0;
+  background: var(--cor-destaque);
+  border-radius: 999px;
+  content: '';
+}
+
+.area-criacao {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--cor-borda);
+}

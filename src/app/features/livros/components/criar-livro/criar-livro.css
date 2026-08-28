@@ -1,0 +1,64 @@
+button {
+  min-height: 2.75rem;
+  padding: 0.55rem 1.1rem;
+  background: var(--cor-destaque);
+  border: 1px solid var(--cor-destaque);
+  border-radius: 7px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:hover {
+  background: var(--cor-destaque-hover);
+  border-color: var(--cor-destaque-hover);
+  box-shadow: 0 6px 16px rgb(0 0 0 / 24%);
+}
+
+.formulario-livro {
+  display: grid;
+  gap: 0.9rem;
+  max-width: 34rem;
+  margin: 1rem 0 0;
+  padding: 1.25rem;
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: 10px;
+}
+
+.formulario-livro label {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--cor-texto-suave);
+  font-weight: 600;
+}
+
+.formulario-livro input,
+.formulario-livro textarea,
+.formulario-livro select {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  background: var(--cor-superficie-secundaria);
+  border: 1px solid var(--cor-borda);
+  border-radius: 7px;
+  color: var(--cor-texto);
+}
+
+.formulario-livro input:hover,
+.formulario-livro textarea:hover,
+.formulario-livro select:hover {
+  border-color: var(--cor-destaque);
+}
+
+.formulario-livro input:focus,
+.formulario-livro textarea:focus,
+.formulario-livro select:focus {
+  border-color: var(--cor-destaque-hover);
+  box-shadow: 0 0 0 3px rgb(159 105 50 / 24%);
+  outline: none;
+}
+
+.formulario-livro textarea {
+  min-height: 6rem;
+  resize: vertical;
+}
